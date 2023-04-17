@@ -133,7 +133,7 @@ a {
 }
 
 .formdesign :hover {
-    border: 2px solid rgb(111, 111, 236);
+    border: 2px solid rgb(147, 147, 239);
     cursor: none;
 }
 
@@ -163,6 +163,6 @@ a {
     margin: 15px;
 }
 
-#myBtn {
-    background-color: rgb(91, 91, 251);
+#myBtn:hover {
+    background-color: rgb(120, 120, 227);
 }

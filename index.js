@@ -6,8 +6,7 @@ function myFunction() {
     console.log(u.value);
     var e = document.getElementById("email");
     console.log(e.value);
-    // e.value.reset();
-    // e.reset();
+
     var p = document.getElementById("phone");
     console.log(p.value);
 
@@ -15,19 +14,12 @@ function myFunction() {
     console.log(pa.value);
 
 }
+// for clearout
+myBtn.addEventListener('click', function handleClick(event) {
+    event.preventDefault();
+    const inputs = document.querySelectorAll('#username,#email,#phone,#pass');
+    inputs.forEach(input => {
+        input.value = '';
+    });
 
-// for validateform
-// function seterror(id, error) {
-//     element = document.getElementById(id);
-//     element = document.getElementsByClassName('forerror')[0].innerHTML = error;
-
-// }
-// function validateform() {
-//     var returnval = true;
-//     var name = document.forms['myForm']["fname"].value;
-//     if (name.length < 5) {
-//         seterror("name", "*");
-//         returnval = false;
-//     }
-//     return returnval;
-// }
+});
