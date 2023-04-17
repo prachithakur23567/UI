@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>uibar</title>
+</head>
+
+<body>
+    <div class="cart1">
+        <div class="container1">
+            <h5 class="signIn"> Sign up with</h5>
+            <div class="logoContainer">
+                <ul class="logo">
+
+                    <a href="https://github.com/" target="_blank">
+                        <button class="btn btn-secondary">
+                            <i class="fab fa-github mr-2"></i><span class="git">GITHUB</span>
+                        </button>
+                    </a>
+                    <a href="https://twitter.com/" target="_blank">
+                        <button class="btn btn-secondary">
+                            <i class="fab fa-twitter mr-2"></i> <span class="twi">
+                                TWITTER</span>
+                        </button>
+                    </a>
+
+                </ul>
+            </div>
+
+        </div>
+        <div class="container2">
+            <h5 class="signOut"> or sign in with email and password </h5>
+            <form action="/myaction.php" class="signupform" name="myForm" onsubmit="return validateForm()"
+                method="post">
+                <div class="formdesign">
+                    <input type="text" value="" id="username" name="fuser" class="namee" placeholder="  UserName"><span
+                        class="forerror">
+                    </span>
+
+                </div>
+                <div class="formdesign">
+                    <input type="text" value="" id="email" name="fname" class="namee" placeholder="  Email"><span
+                        class="forerror"> </span>
+
+                </div>
+                <div class="formdesign">
+                    <input type="phone" value="" id="phone" name="fnumber" class="namee"
+                        placeholder="  Phone Number"><span class="forerror">
+                    </span>
+
+                </div>
+                <div class="formdesign">
+                    <input type="password" value="" id="pass" name="fpass" class="namee" placeholder="  Password"><span
+                        class="forerror">
+                    </span>
+
+                </div>
+                <button id="myBtn" type="button">SIGN UP</button>
+
+            </form>
+
+        </div>
+
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
